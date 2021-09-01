@@ -1,26 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
 
-function App() {
+import Button from 'react-bootstrap/Button';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import './App.css';
+import { Form, Container } from 'react-bootstrap';
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container className="p-3">
+      <h1 className="header">Ogden's Basic English Spell Checker</h1>
+      <Form onSubmit={() => {}}>
+        <Form.Group className="mb-3" controlId="formGroupPassword">
+          <Form.Control size="lg" type="text" placeholder="Enter any word!" />
+        </Form.Group>
+        <Button variant="primary" type="submit">
+          Submit
+        </Button>
+      </Form>
+    </Container>
   );
-}
+};
 
 export default App;
