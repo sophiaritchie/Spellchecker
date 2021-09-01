@@ -1,7 +1,6 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import asdsdf from 'assdfssdsdsdsdfdasdasddda';
 
 function App() {
   return (

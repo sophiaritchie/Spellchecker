@@ -30,15 +30,15 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npx lint-staged"
+      "pre-commit": "lint-staged"
     }
   },
   "lint-staged": {
     "*.{js,ts,tsx}": [
-      "npx eslint --quiet --fix"
+      "eslint --quiet --fix"
     ],
     "*.{json,md,html}": [
-      "npx prettier --write"
+      "prettier --write"
     ]
   },
   "browserslist": {
@@ -54,6 +54,9 @@
     ]
   },
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^3.7.0",
+    "@typescript-eslint/parser": "^3.7.0",
+    "typescript": "^4.1.2",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^4.0.0",
     "husky": "^7.0.2",
